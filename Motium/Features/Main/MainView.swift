@@ -9,7 +9,15 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack(alignment: .leading){
+                List{
+                    Text("BMW E36")
+                    Text("Mazda Mazda3")
+                }
+            }
+            .navigationTitle("Motium")
+        }
     }
 }
 
